@@ -8,7 +8,8 @@ public without sharing class PermSetController {
     @AuraEnabled(cacheable=true)
     public static List<PermissionSetAssignment> getPermSetAssignmentList() {
         List<PermissionSetAssignment> psaList = [SELECT Id, AssigneeId, Assignee.FirstName, Assignee.LastName, Assignee.UserName,
-                                                PermissionSetId, PermissionSet.Name, PermissionSet.IsCustom,PermissionSet.ProfileId  
+                                                PermissionSetId, PermissionSet.Name, PermissionSet.IsCustom, PermissionSet.ProfileId,
+                                                PermissionSet.Profile.Name   
                                                     FROM PermissionSetAssignment 
                                                     WHERE Assignee.UserName <> NULL
                                                     ORDER BY Assignee.UserName];

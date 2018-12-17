@@ -1,9 +1,12 @@
 <template>
-    <lightning-card title="Users with Permission Sets" icon-name="custom:custom63">
+    <lightning-card title="View Users with Permission Sets" icon-name="custom:custom103">
 
+        <p class="slds-p-horizontal_small">
+            Require user input to avoid frequent long queries on orgs with many users and permission sets.
+        </p>
         <div class="slds-m-around_medium">
             <p class="slds-m-bottom_small">
-                <lightning-button label="User Permissions" onclick={handleLoad}></lightning-button>
+                <lightning-button label="View Permissions" onclick={handleLoad}></lightning-button>
             </p>
             <template if:true={psalist}>
                 <table class="slds-table slds-table_cell-buffer slds-table_bordered">
@@ -43,7 +46,7 @@
                                     <div class="slds-truncate" title="Permsetname">{psa.PermissionSet.Name}</div>
                                 </td>   
                                 <td data-label="PermSet Name">
-                                    <div class="slds-truncate" title="Profile">{psa.PermissionSet.ProfileId}</div>
+                                    <div class="slds-truncate" title="Profile">{psa.PermissionSet.Profile.Name}</div>
                                 </td>                       
                             </tr>   
                         </template>
