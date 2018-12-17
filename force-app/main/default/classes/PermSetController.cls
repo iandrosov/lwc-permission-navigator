@@ -46,4 +46,15 @@ public without sharing class PermSetController {
 
         return countList;
     }
+    // Pass permission set name to get all assigned users
+    @AuraEnabled(cacheable=true)
+    public static List<PermissionSetAssignment> findUsers(String permsetKey){
+        List<PermissionSetAssignment> psaList = [SELECT Id, AssigneeId, Assignee.FirstName, Assignee.LastName, Assignee.UserName,
+                                                PermissionSetId, PermissionSet.Name, PermissionSet.IsCustom, PermissionSet.ProfileId,
+                                                PermissionSet.Profile.Name   
+                                                    FROM PermissionSetAssignment 
+                                                    WHERE Assignee.UserName <> NULL AND PermissionSet.Name =: permsetKey 
+                                                    ORDER BY Assignee.UserName];
+        return psaList;
+    }
 }

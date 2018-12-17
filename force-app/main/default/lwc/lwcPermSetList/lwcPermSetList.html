@@ -46,7 +46,9 @@
                                     <div class="slds-truncate" title="Permsetname">{psa.PermissionSet.Name}</div>
                                 </td>   
                                 <td data-label="PermSet Name">
-                                    <div class="slds-truncate" title="Profile">{psa.PermissionSet.Profile.Name}</div>
+                                    <template if:true={psa.PermissionSet.ProfileId}>
+                                        <div class="slds-truncate" title="Profile">{psa.PermissionSet.Profile.Name}</div>
+                                    </template>    
                                 </td>                       
                             </tr>   
                         </template>
