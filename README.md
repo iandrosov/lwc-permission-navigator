@@ -1,2 +1,14 @@
-# lwc-permission-navigator
-Lightning Web Components APP to view navigate &amp; report of Permission sets
+# SFDX  App
+
+## Dev, Build and Test
+
+
+## Resources
+
+
+## Description of Files and Directories
+
+
+## Issues
+
+
