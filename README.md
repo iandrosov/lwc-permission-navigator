@@ -26,14 +26,14 @@ There are two ways to install LWC Permission Navigator App:
     sfdx force:auth:web:login -d -a spring19hub
     ```
 
-1. Clone the lwc-recipes repository:
+1. Clone the lwc-permission-navigator repository:
 
     ```
     git clone https://github.com/iandrosov/lwc-permission-navigator
     cd lwc-permission-navigator
     ```
 
-1. Create a scratch org and provide it with an alias (**lwc-recipes** in the command below):
+1. Create a scratch org and provide it with an alias (**lwc-permission-navigator** in the command below):
 
     ```
     sfdx force:org:create -s -f config/project-scratch-def.json -a lwc-permission-navigator
