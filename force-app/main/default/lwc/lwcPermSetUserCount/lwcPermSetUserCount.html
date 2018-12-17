@@ -1,0 +1,42 @@
+<template>
+
+    <lightning-card title="Users Assigned to Permission Set" icon-name="custom:custom63">
+
+        <div class="slds-m-around_medium">
+            <template if:true={permissions.data}>
+
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead>
+                              <tr class="slds-line-height_reset">
+                                <th class="slds-text-title_caps" scope="col">
+                                  <div class="slds-truncate" title="Permission Set">Permission Set</div>
+                                </th>
+                                <th class="slds-text-title_caps" scope="col">
+                                  <div class="slds-truncate" title="User Count">User Count</div>
+                                </th>
+                            </tr>    
+                    </thead>
+                    <tbody>
+        
+                    <template for:each={permissions.data} for:item="psa">
+                        <tr class="slds-hint-parent" key={psa.Id}>
+                                <td data-label="User Name">
+                                    <div class="slds-truncate" title="Username">{psa.name}</div>
+                                </td>   
+                                <td data-label="First Name">
+                                    <div class="slds-truncate" title="Firstname">{psa.userCount}</div>
+                                </td>   
+                        </tr>             
+                    </template>
+                    </tbody>
+                </table>
+
+            </template>
+            <template if:true={permissions.error}>
+                <c-error-panel errors={permissions.error}></c-error-panel>
+            </template>                
+        </div>
+
+    </lightning-card>
+
+</template>
