@@ -7,17 +7,14 @@
         <componentInstances>
             <componentName>lwcPermSetUserList</componentName>
         </componentInstances>
-        <mode>Replace</mode>
         <name>top</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <mode>Replace</mode>
         <name>bottomLeft</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <mode>Replace</mode>
         <name>bottomRight</name>
         <type>Region</type>
     </flexiPageRegions>
@@ -25,12 +22,10 @@
         <componentInstances>
             <componentName>lwcPermSetUserCount</componentName>
         </componentInstances>
-        <mode>Replace</mode>
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Home Page Default</masterLabel>
-    <parentFlexiPage>home__desktopDefault</parentFlexiPage>
+    <masterLabel>LWC Home</masterLabel>
     <template>
         <name>home:desktopTemplate</name>
     </template>

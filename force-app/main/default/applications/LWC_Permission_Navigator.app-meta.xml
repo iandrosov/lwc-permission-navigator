@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>LWC_Home</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType xsi:nil="true"/>
+    </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
         <logo>codeylogo128</logo>
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
-    <description>Navigate and report on USers and permissions sets</description>
+    <description>Navigate and report on Users and permissions sets</description>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>LWC Permission Navigator</label>
     <navType>Standard</navType>
-    <tabs>standard-home</tabs>
+    <tabs>Permissions</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <uiType>Lightning</uiType>
