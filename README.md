@@ -6,8 +6,8 @@ This app makes it simple to view user permission set assignments in Salesforce O
 
 There are two ways to install LWC Permission Navigator App:
 
--   [Using Salesforce DX](#installing-recipes-using-salesforce-dx): This is the recommended installation option. Use this option if you are a developer who may want to customize the app and may be contribute to this project code.
--   [Using an Unlocked Package](#installing-recipes-using-an-unlocked-package): This option allows anybody to install and use the Permission Navigator App without installing a local development environment.
+-   [Using Salesforce DX](#installing-permission-navigator-using-salesforce-dx): This is the recommended installation option. Use this option if you are a developer who may want to customize the app and may be contribute to this project code.
+-   [Using an Unlocked Package](#installing-permission-navigator-using-an-unlocked-package): This option allows anybody to install and use the Permission Navigator App without installing a local development environment.
 
 ## Installing Permission Navigator using Salesforce DX
 
@@ -54,9 +54,15 @@ There are two ways to install LWC Permission Navigator App:
 1. In App Launcher, select the **LWC Permission Navigator** app.
 
 
-## Installing Recipes using an Unlocked Package
+## Installing Permission Navigator using an Unlocked Package
 
-UNDER CONSTRUCTION
+1. [Sign up](https://www.salesforce.com/form/signup/prerelease-spring19/) for a Spring '19 pre-release org, enable My Domain, and deploy it to all users.
+
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=0HoB0000000TN31KAG) to install the  unlocked package in your Spring '19 org.
+
+1. Select **Install for All Users**
+
+1. In App Launcher, select the **LWC Permission Navigator** app.
 
 ## Resources
 
