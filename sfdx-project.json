@@ -13,6 +13,7 @@
     "sourceApiVersion": "45.0",
     "packageAliases": {
         "usernavi": "0HoB0000000TN31KAG",
-        "usernavi@1.0.0-1": "04tB0000000PdTZIA0"
+        "usernavi@1.0.0-1": "04tB0000000PdTZIA0",
+        "usernavi@1.0.1-1": "04tB0000000AKbkIAG"
     }
 }
