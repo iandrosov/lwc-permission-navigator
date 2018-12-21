@@ -60,7 +60,7 @@ public without sharing class PermSetController {
 
     @AuraEnabled(cacheable=true)
     public static List<PermissionSet> getPermSetList(){
-        List<PermissionSet> psList = [SELECT Id, Name, ProfileId, PermissionSet.Profile.Name FROM PermissionSet];
+        List<PermissionSet> psList = [SELECT Id, Name, ProfileId, Profile.Name FROM PermissionSet];
 
         return psList;
     }
