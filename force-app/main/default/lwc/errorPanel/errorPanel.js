@@ -6,7 +6,7 @@ export default class ErrorPanel extends LightningElement {
 
     @track viewDetails = false;
 
-    _errors;
+    @track _errors = null;
 
     @api
     get errors() {
