@@ -57,4 +57,11 @@ public without sharing class PermSetController {
                                                     ORDER BY Assignee.UserName];
         return psaList;
     }
+
+    @AuraEnabled(cacheable=true)
+    public static List<PermissionSet> getPermSetList(){
+        List<PermissionSet> psList = [SELECT Id, Name, ProfileId, Profile.Name FROM PermissionSet];
+
+        return psList;
+    }
 }

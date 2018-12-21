@@ -1,0 +1,48 @@
+<template>
+
+        <lightning-card title="List of Permission Sets" icon-name="custom:custom91">
+    
+            
+            <div class="slds-m-around_medium">
+                <template if:true={permissions.data}>
+    
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                        <thead>
+                                  <tr class="slds-line-height_reset">
+                                    <th class="slds-text-title_caps" scope="col">
+                                      <div class="slds-truncate" title="Permission Set">Permission Set</div>
+                                    </th>
+                                    <th class="slds-text-title_caps" scope="col">
+                                      <div class="slds-truncate" title="Profile">Profile</div>
+                                    </th>
+                                </tr>    
+                        </thead>
+                        <tbody>
+            
+                        <template for:each={permissions.data} for:item="psa">
+                            <tr class="slds-hint-parent" key={psa.Id}>
+                                    <td data-label="Permission Set">
+                                        <div class="slds-truncate" title="Permission Set">{psa.Name}</div>
+                                    </td>  
+
+                                    <td data-label="Profile">
+                                            
+                                        <template if:true={psa.ProfileId}>
+                                            <div class="slds-truncate" title="Profile">{psa.Profile.Name}</div>
+                                        </template>
+                                        
+                                    </td>   
+                            </tr>             
+                        </template>
+                        </tbody>
+                    </table>
+    
+                </template>
+                <template if:true={permissions.error}>
+                    <c-error-panel errors={permissions.error}></c-error-panel>
+                </template>                
+            </div>
+    
+        </lightning-card>
+    
+    </template>
