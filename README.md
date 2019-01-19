@@ -51,6 +51,7 @@ There are two ways to install LWC Permission Navigator App:
     sfdx force:org:open
     ```
 1. In the new scratch org permission setts assign LWC Permission Navi to your system admin user account that grants access to teh app and tabs.
+`sfdx force:user:permset:assign -n LWC_Permission_Navi`
 
 
 1. In App Launcher, select the **LWC Permission Navigator** app.
