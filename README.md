@@ -61,7 +61,7 @@ There are two ways to install LWC Permission Navigator App:
 
 1. [Sign up](https://www.salesforce.com/form/signup/prerelease-spring19/) for a Spring '19 pre-release org, enable My Domain, and deploy it to all users.
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000AKbpIAG) to install the  unlocked package in your Spring '19 org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000006l4sIAA) to install the  unlocked package in your Spring '19 org.
 
 1. Select **Install for All Users**
 
