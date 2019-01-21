@@ -4,8 +4,8 @@
             "path": "force-app",
             "default": true,
             "package": "usernavi",
-            "versionName": "UserNavi V1.0.3",
-            "versionNumber": "1.0.3.NEXT"
+            "versionName": "UserNavi V1.1.0",
+            "versionNumber": "1.1.0.NEXT"
         }
     ],
     "namespace": "",
@@ -16,6 +16,7 @@
         "usernavi@1.0.0-1": "04tB0000000PdTZIA0",
         "usernavi@1.0.1-1": "04tB0000000AKbkIAG",
         "usernavi@1.0.2-1": "04tB0000000AKbpIAG",
-        "usernavi@1.0.3-2": "04tB00000006l4sIAA"
+        "usernavi@1.0.3-2": "04tB00000006l4sIAA",
+        "usernavi@1.1.0-1": "04tB00000006l4xIAA"
     }
 }
