@@ -1,6 +1,6 @@
 # Lightning Web Components Permission Navigator App 
 
-This app makes it simple to view user permission set assignments in Salesforce ORG. The app is built with SalesforceDX using Lightining Web Components that only available in Spring 19 release. can be used on Spring 19 pre-release developer or Scratch orgs. Once teh Spring 19 will go GA thsi package can be installed on any org to view/report on user permission sets.
+This app makes it simple to view user permission set assignments in Salesforce ORG. The app is built with SalesforceDX using Lightning Web Components that only available in Spring 19 release. can be used on Spring 19 pre-release developer or Scratch org with API version 45.00. Once the Spring 19 will be GA this package can be installed on any org to view/report on user permission sets.
 
 ## Installation Instructions
 
@@ -50,7 +50,7 @@ There are two ways to install LWC Permission Navigator App:
     ```
     sfdx force:org:open
     ```
-1. In the new scratch org permission setts assign LWC Permission Navi to your system admin user account that grants access to teh app and tabs.
+1. In the new scratch org permission setts assign LWC Permission Navi to your system admin user account that grants access to the app and tabs.
 `sfdx force:user:permset:assign -n LWC_Permission_Navi`
 
 
@@ -61,7 +61,7 @@ There are two ways to install LWC Permission Navigator App:
 
 1. [Sign up](https://www.salesforce.com/form/signup/prerelease-spring19/) for a Spring '19 pre-release org, enable My Domain, and deploy it to all users.
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000006l4xIAA) to install the  unlocked package in your Spring '19 org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000006l4xIAA) to install the unlocked package in your Spring '19 org.
 
 1. Select **Install for All Users**
 
