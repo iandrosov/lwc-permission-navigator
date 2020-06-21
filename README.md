@@ -1,6 +1,6 @@
 # Lightning Web Components Permission Navigator App 
 
-This app makes it simple to view user permission set assignments in Salesforce ORG. The app is built with SalesforceDX using Lightning Web Components that only available in Spring 19 release. can be used on Spring 19 pre-release developer or Scratch org with API version 45.00. Once the Spring 19 will be GA this package can be installed on any org to view/report on user permission sets.
+This app makes it simple to view user permission set assignments in Salesforce ORG. The app is built with SalesforceDX using Lightning Web Components that only available startinf from Spring 19 release developer or Scratch org with API version 45.00 or greater. This package can be installed on any org to view/report on user permission sets.
 
 ## Installation Instructions
 
@@ -15,15 +15,15 @@ There are two ways to install LWC Permission Navigator App:
 
 1. Set up your environment. Follow the steps in the [Quick Start: Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/) Trailhead project. The steps include:
 
-    - Sign up for a Spring '19 pre-release org and enable Dev Hub
-    - Install the pre-release version of the Salesforce CLI
+    - Sign up for a Developer org and enable Dev Hub
+    - Install the current version of the Salesforce CLI
     - Install Visual Studio Code
     - Install the Visual Studio Code Salesforce extensions, including the Lightning Web Components extension
 
-1. If you haven't already done so, authenticate with your Spring '19 hub org and provide it with an alias (spring19hub):
+1. If you haven't already done so, authenticate with your Dev Hub org and provide it with an alias (MyDevHub):
 
     ```
-    sfdx force:auth:web:login -d -a spring19hub
+    sfdx force:auth:web:login -d -a MyDevHub
     ```
 
 1. Clone the lwc-permission-navigator repository:
@@ -59,9 +59,9 @@ There are two ways to install LWC Permission Navigator App:
 
 ## Installing Permission Navigator using an Unlocked Package
 
-1. [Sign up](https://www.salesforce.com/form/signup/prerelease-spring19/) for a Spring '19 pre-release org, enable My Domain, and deploy it to all users.
+1. [Sign up](https://www.salesforce.com/form/signup/prerelease-spring19/) for the org, enable My Domain, and deploy it to all users.
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000006l4xIAA) to install the unlocked package in your Spring '19 org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000006l4xIAA) to install the unlocked package in your org.
 
 1. Select **Install for All Users**
 
