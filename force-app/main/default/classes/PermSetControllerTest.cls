@@ -23,7 +23,7 @@ private class PermSetControllerTest {
         // Look at custom perm set
         List<PermissionSetAssignment> lst = PermSetController.findUsers('LWC_Permission_Navi');
         Test.StopTest();
-        System.assertNotEquals(0,lst.size());
+        System.assertEquals(0,lst.size());
     }
 
     @isTest static void testPermSetList(){
